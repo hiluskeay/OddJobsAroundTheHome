@@ -1,0 +1,85 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('../images/benjamin-brunner-imEtY2Kpejk-unsplash.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: left;
+    padding: 2rem;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  }
+  
+  .content {
+    position: relative;
+    z-index: 2; /* Ensure content is above overlay */
+    max-width: 600px; /* Limit content width */
+    padding: 2rem;
+    border-radius: 10px; /* Rounded corners for content */
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+  }
+  
+  .title {
+    font-size: 3rem; /* Larger title font size */
+    margin-bottom: 2rem; /* Space below the title */
+  }
+  
+  form {
+    width: 100%; /* Full width for form */
+    max-width: 400px; /* Limit form width */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center form items horizontally */
+  }
+  
+  label {
+    font-size: 1.2rem; /* Label font size */
+    font-weight: bold; /* Bold label text */
+    margin-bottom: 0.5rem; /* Space below each label */
+    text-align: left; /* Align label text to the left */
+    width: 100%; /* Ensure label takes full width */
+  }
+  
+  input,
+  textarea {
+    width: 100%; /* Full width for input fields */
+    padding: 1rem; /* Padding inside input fields */
+    font-size: 1rem; /* Font size of input fields */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners for input fields */
+    margin-bottom: 1rem; /* Space below each input field */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+  }
+  
+  textarea {
+    min-height: 150px; /* Minimum height for textarea */
+  }
+  
+  button {
+    background-color: #ff7f50; /* Orange background color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 1rem 2rem; /* Padding around button text */
+    font-size: 1.2rem; /* Font size of button text */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  button:hover {
+    background-color: #ff6347; /* Darker orange on hover */
+  }
+  
